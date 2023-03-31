@@ -1,0 +1,610 @@
+@media screen and (min-width: 1200px) {
+    .container{
+        width:1200px;
+        /* padding-left: 156px; */
+        /* padding-right: 156px; */
+        margin: 0 ;
+        padding: 0;
+    }
+    .section{
+        width: 1200px;
+        padding-left: 0;
+    }
+    header{
+        max-width: 1200px;
+    }
+    
+    /*---------------------  Секция навигации-------------        */
+    .container-nav{
+        width: 1400px;
+    }
+    .logo{
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 800;
+        font-size: 18px;
+        line-height: 21px;
+        /* identical to box height, or 117% */
+
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+
+/* NAVY BLUE */
+
+color: #2E2F42;
+        padding-top: 25.5px;
+        padding-bottom: 25.5px;
+        
+    }
+    .logo > span{
+        color: var(--nav-hover);
+    }
+    .nav{
+        display:flex;
+        align-items: center;
+        margin-left: 156px;
+
+    } 
+    .logo{
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: calc(21 / 18);
+        text-decoration: none;
+        color: var(--font-color);
+        padding-top: 25.5px;
+        padding-bottom: 25.5px;
+        margin-right: 0;
+        
+    }
+    .logo > span{
+        color: var(--nav-hover);
+    }
+
+    .nav-ul{
+        list-style: none;
+        margin-left: 36px;
+        display: flex;
+        align-items: center; 
+    }
+
+    .menu{
+        text-decoration: none;
+        font-style: normal;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.62;
+        letter-spacing: 0.02em;
+        color: var(--menu-color);
+        margin-left: 40px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+        display: block;
+        position: relative;
+        transition: color 250ms linear;
+    }
+    .current::after{
+        content:'';
+        width: 100%;
+        height: 4px;
+        border-radius: 2px;
+        background: #2196F3;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+    }
+
+    .adres:hover,
+    .adres:focus,
+    .footer-contacts:hover,
+    .footer-contacts:focus,
+    .contacts-link:hover,
+    .contacts-link:focus,
+    .menu:hover,
+    .menu:focus,
+    .contacts-pic:hover, 
+    .contacts-pic:focus{
+        color:var(--nav-hover);
+        fill: var(--nav-hover);
+        
+    }
+    .contacts-link:hover> .contacts-pic, 
+    .contacts-link:focus> .contacts-pic{
+    fill:var(--nav-hover);
+    }
+    .contacts{
+        list-style: none;
+        display: flex;
+        margin-left: 292px;
+        align-items: center; 
+        
+    }
+    .contacts-pic{
+        margin-right: 10px;
+        fill: var(--contacts-link-color);
+        align-items: center;
+        transition: fill 250ms linear;
+    }
+
+    .contacts-link{
+        text-decoration: none;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        letter-spacing: 0.02em;
+        text-align: left;
+        color: var(--contacts-link-color);
+       margin-left: 40px;
+       margin-right: 0;
+        display: flex;
+        align-items: center;
+        transition: color 250ms linear;
+    }
+    
+
+
+        /****************************       hero  *******************************/
+        .hero{
+            padding-top: 188px;
+            padding-bottom: 188px;
+            max-width: 1440px;
+            height: 600px;
+            background-image: linear-gradient(   
+                rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)
+            ), url(../images/hero-bg.jpg); 
+            
+        }
+        .container-hero{
+    
+        max-width: 496px;  
+        padding-left: 0;
+    padding-right: 0;
+    margin-left: 472px;
+    margin-right: 472px;
+    }
+    .hero-title{  
+        font-size: 56px;
+        line-height: 60px;
+        text-align: center;
+        width: 496px; 
+    }    
+    .hero-button{
+        
+        letter-spacing: 0.06em;
+        margin-top: 48px;
+        margin-left: 0px;
+        }
+    
+
+    /*===============================   Чем мы занимаемся    =============*/
+    .activity{
+        padding-bottom: 120px;
+        display: flex;
+    }
+
+    .container-activity{
+    align-items: center;
+    margin-left: 156px;
+    padding-left: 0;
+    
+    }
+
+    .activity-pic{
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    } 
+    .activity-images{ 
+        display: flex;
+        margin-top: 72px;
+        margin-bottom: 120px;
+        
+    }
+    .activity-images li:not(:last-child){
+        margin-right: 24px;
+    }
+    .activity-images li{
+        position: relative;
+    }
+    
+
+    .activity-caption{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        color: #2E2F42;
+        padding: 27px 82px;
+        
+    }
+    .act-capt-container{
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        background: rgba(47, 48, 58, 0.8);
+    }
+    /*-------------------------  Секция статей   -------------------*/
+    .articles-container{
+        display: flex;
+        width: 1200px;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    margin-left: 122px;
+    }
+    .articles-container-pic{
+    
+        max-width: 264px;
+        min-height: 112px;
+        background: #F5F4FA;
+        border-radius: 4px;
+        display:flex;
+        justify-content: center; 
+        align-items: center;
+        margin-bottom: 8px;
+    }
+    .articles{
+        display: flex;
+    }
+    .articles-pic{
+        display: block;
+    }
+    .articles li{
+        max-width: 264px;
+        margin-bottom: 0;
+        width: 264px;
+        
+    }
+    .articles li:not(:last-child){
+        margin-right: 24px;
+    }
+    .articles-title{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: left;
+    }
+    
+    .article{
+        
+        font-weight: 400;
+        
+    }
+
+
+  
+    /*===============    наша комманда     ===================*/
+.command{
+    background: #F5F4FA;
+    width: 1120px;
+    margin-left: 156px;
+ }
+ .activity-title,
+ .command-title,
+ .clients-title{
+     font-size: 36px;
+     font-style: normal;
+     font-weight: 700;
+     line-height: calc(40 / 36);
+     text-align: center;
+     margin-bottom: 72px;
+  }
+  .command-list{
+    flex-wrap: nowrap;
+    margin-left: 0px;
+  }
+  
+  .command-li{
+      
+ background: #FFFFFF;
+     box-shadow: 
+     0px 1px 3px rgba(0, 0, 0, 0.12), 
+     0px 1px 1px rgba(0, 0, 0, 0.14),
+     0px 2px 1px rgba(0, 0, 0, 0.2);
+     border-radius: 0px 0px 4px 4px;
+     margin: 0;
+     
+  }
+  .command-list li:not(:last-child){
+     margin-right: 24px;
+  }
+  .command-foto{
+     display: block;
+     /*max-width: 100%;*/
+     height: auto;
+  }
+  .figure-caption{
+     padding-top: 32px;
+  }
+ 
+ .command-name{
+     font-size: 20px;
+     font-weight: 500;
+     line-height: 1.20;
+     text-align: center;
+ 
+     margin-bottom: 10px;
+  }
+ .command-position{
+     font-size: 16px;
+     font-weight: 400;
+     line-height: 1.18;
+     letter-spacing: 0.03em;
+     text-align: center;
+     color: var(--command-position-font-color);
+     margin-bottom: 16px;
+ }
+ .socials{
+     display: flex;
+     /*justify-content: center;*/
+     margin-left:16px;
+     margin-right: 16px;
+     margin-bottom: 30px;
+     box-shadow: initial;
+ }
+ .socials-li{
+     display: flex;
+     margin-right:0px;
+     box-shadow: none;
+ }
+ .socials li:not(:last-child){
+     margin-right: 24px;
+ }
+ .socials-button{
+     fill: #AFB1B8; 
+     border-radius: 50%;
+     max-width: 40px;
+     max-height: 40px;
+     padding: 12px;
+     box-shadow: none;
+     transition: fill 250ms linear;
+     transition: background-color 250ms linear;
+     background: #4D5AE5;
+ }
+ /*.socials-button:hover,
+ .socials-button:focus,
+ .footer-socials-button:hover,
+ .footer-socials-button:focus{
+     fill: #FFFFFF;
+    3; background-color: #2196F
+ }*/
+
+/*===============    Постоянные клиенты    =================================*/
+.clients{
+    padding-bottom: 120px;
+    padding-top: 120px;
+    width: 1200px;
+    margin-left: 156px;
+ 
+}
+.clients-list{
+    display: flex; 
+    flex-wrap: nowrap;
+}
+.clients-list li{
+    margin: 0;
+}
+.clients-list li:not(:first-child){
+    margin-left: 24;
+}
+.client-pic{
+    /* padding: 16px 32px; */
+    padding: auto;
+   
+    fill: #AFB1B8;
+    border: 1px solid #AFB1B8;
+    /* box-sizing: border-box; */
+    border-radius: 4px;
+    transition: fill 250ms linear;
+    width: 168px;
+}
+.client-pic:hover,
+.client-pic:focus{
+    fill:  #2196F3;   
+    border: 1px solid #2196F3;
+    box-sizing: border-box;
+    border-radius: 4px;
+}
+/* .client-link:hover, */
+/* .client-link:focus{ */
+ /* fill:  #2196F3; */
+/* } */
+/* --------------------------  footer  ----------------------------*/
+.footer{
+    background: var(--footer-bgcolor);
+    padding-top: 101px;
+    padding-bottom: 100px;
+    width: 1440px;
+}
+.container-footer{
+    padding-left: auto;
+    padding-left: auto;
+    display:flex;
+    align-items: baseline;
+    margin-left: 156px;
+    padding-left: 0;
+    
+}
+.footer-logo{
+    font-family: 'Raleway';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 21px;
+/* identical to box height, or 117% */
+
+display: flex;
+align-items: center;
+letter-spacing: 0.03em;
+text-transform: uppercase;
+    margin-bottom: 20px;
+    /*padding-top: 60px;*/
+    display: block;
+    text-decoration: none;
+}
+.footer-logo  span{
+    color: var(--nav-hover);
+}
+/* .footer-contacts-list{} */
+
+
+.advert{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+letter-spacing: 0.02em;
+color: #F4F4FD;
+max-width: 264px;
+margin-right: 0;
+margin-bottom: 0;
+}
+
+
+
+.footer-join{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    margin-bottom: 16px;
+}
+/*===============================*/
+.socials-part{
+    padding-left: 120px;
+    margin-bottom: 0;
+}
+.footer-socials{
+    display: flex;
+   
+   
+}
+.footer-socials-li{
+    display: flex;
+    margin-right:0px;
+}
+.footer-socials li:not(:last-child){
+    margin-right: 10px;}
+.footer-socials-button{
+    fill: #FFFFFF; 
+    border-radius: 50%;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 8px;
+    background: #4D5AE5;;
+    transition: background-color 250ms linear;
+}
+
+
+.footer-subscribe{
+    margin-left: 80px;
+}
+
+.footer-mail{
+    width: 264px;
+    height: 40px;
+    margin-right: 0px;
+    background: #2F303A;
+    padding-left: 16px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 24px;
+    /* display: flex; */
+    align-items: center; /**/
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    outline: none;
+}
+.but-wrap{
+    position: relative;
+}
+.footer-join{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    
+    
+}
+.footer-button{
+    width: 165px;
+    height: 40px;
+    background: #4D5AE5;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+position: relative;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    letter-spacing: 0.06em;
+    color: #FFFFFF;
+    margin-left: 24px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+
+}
+.button-pic{
+   
+    /*position: absolute;
+    left:148px;
+    top: 13px;*/
+    position: relative;
+    margin-left: 16px;
+   padding-top: 10px;
+}
+
+.modal{
+    position: absolute;
+    width: 428px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top:400px;
+    left: 728px/*52%*/;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms;
+    padding-top: 72px;
+    padding-left: 24px; 
+    padding-bottom: 24px;  
+}
+
+
+
+
+}
