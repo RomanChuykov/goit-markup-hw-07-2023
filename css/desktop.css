@@ -1,22 +1,23 @@
 @media screen and (min-width: 1200px) {
     .container{
         width:1200px;
-        /* padding-left: 156px; */
-        /* padding-right: 156px; */
+        padding-left: 156px;
+        padding-right: 156px;
         margin: 0 ;
-        padding: 0;
+        
     }
     .section{
         width: 1200px;
-        padding-left: 0;
+        margin-bottom: 120px;
     }
     header{
-        max-width: 1200px;
+        /* max-width: 1440x; */
     }
     
     /*---------------------  Секция навигации-------------        */
     .container-nav{
-        width: 1400px;
+        width: 1440px;
+      margin-left: auto;margin-right: auto;
     }
     .logo{
         font-family: 'Raleway';
@@ -31,9 +32,9 @@
         letter-spacing: 0.03em;
         text-transform: uppercase;
 
-/* NAVY BLUE */
+    /* NAVY BLUE */
 
-color: #2E2F42;
+        color: #2E2F42;
         padding-top: 25.5px;
         padding-bottom: 25.5px;
         
@@ -44,8 +45,6 @@ color: #2E2F42;
     .nav{
         display:flex;
         align-items: center;
-        margin-left: 156px;
-
     } 
     .logo{
         font-family: Raleway;
@@ -118,10 +117,13 @@ color: #2E2F42;
     .contacts{
         list-style: none;
         display: flex;
-        margin-left: 292px;
+        margin-left:auto;
         align-items: center; 
         
     }
+    .contacts li{
+        padding:0;
+        }
     .contacts-pic{
         margin-right: 10px;
         fill: var(--contacts-link-color);
@@ -149,38 +151,74 @@ color: #2E2F42;
 
         /****************************       hero  *******************************/
         .hero{
+            text-align: center;
             padding-top: 188px;
             padding-bottom: 188px;
             max-width: 1440px;
             height: 600px;
+            /* margin: 0 auto; */
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* padding-left: 452px; */
+            /* padding-right: 452px; */
+            
             background-image: linear-gradient(   
                 rgba(47, 48, 58, 0.4),
                 rgba(47, 48, 58, 0.4)
-            ), url(../images/hero-bg.jpg); 
-            
+            ), url(../images/hero-bg.jpg);
+            margin-bottom: 120px;
+            width: 1440px;
         }
         .container-hero{
-    
-        max-width: 496px;  
-        padding-left: 0;
-    padding-right: 0;
-    margin-left: 472px;
-    margin-right: 472px;
-    }
-    .hero-title{  
-        font-size: 56px;
-        line-height: 60px;
-        text-align: center;
-        width: 496px; 
-    }    
-    .hero-button{
-        
-        letter-spacing: 0.06em;
-        margin-top: 48px;
-        margin-left: 0px;
+           /* ???????????????*/
+           /*background: var(--hero-bgcolor);*/
+            max-width: 496px;  
+            padding-left: 0;
+           padding-right: 0;
+           margin-left: 472px;
+           margin-right: 472px;
         }
-    
+        .hero-title{  
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 56px;
+            line-height: 60px;
+            /* or 107% */
 
+            text-align: center;
+            letter-spacing: 0.02em;
+
+            /* WHITE */
+
+            color: #FFFFFF;
+             width: 496px; 
+             
+            /*margin-left: 237px; 
+            margin-right: 237px;    */   
+        }    
+         .hero-button{
+            cursor: pointer;
+            border: none;
+            width: 169px;
+            height: 56px;
+            /* left: 700px; */
+            top: 430px;
+            background: var(--nav-hover);
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            font-family: inherit;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 1.87;
+            letter-spacing: 0.06em;
+            text-align: center;
+            color: var(--hero-font-color);
+            margin-top: 54px;
+         
+            }
+        
     /*===============================   Чем мы занимаемся    =============*/
     .activity{
         padding-bottom: 120px;
@@ -196,7 +234,7 @@ color: #2E2F42;
 
     .activity-pic{
         display: block;
-        max-width: 100%;
+        max-width: 360px;
         height: auto;
 
     } 
@@ -240,7 +278,7 @@ color: #2E2F42;
     justify-content: center;
     padding: 0;
     margin: 0;
-    margin-left: 122px;
+    /* margin-left: 122px; */
     }
     .articles-container-pic{
     
@@ -284,21 +322,21 @@ color: #2E2F42;
 
   
     /*===============    наша комманда     ===================*/
-.command{
+    .command{
     background: #F5F4FA;
-    width: 1120px;
-    margin-left: 156px;
- }
- .activity-title,
- .command-title,
- .clients-title{
-     font-size: 36px;
-     font-style: normal;
-     font-weight: 700;
-     line-height: calc(40 / 36);
-     text-align: center;
-     margin-bottom: 72px;
-  }
+        width: 1440px;
+        /* margin-left: 156px; */
+    }
+    .activity-title,
+    .command-title,
+    .clients-title{
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: calc(40 / 36);
+        text-align: center;
+        margin-bottom: 72px;
+    }
   .command-list{
     flex-wrap: nowrap;
     margin-left: 0px;
@@ -380,23 +418,24 @@ color: #2E2F42;
  }*/
 
 /*===============    Постоянные клиенты    =================================*/
-.clients{
-    padding-bottom: 120px;
-    padding-top: 120px;
-    width: 1200px;
-    margin-left: 156px;
- 
-}
-.clients-list{
-    display: flex; 
-    flex-wrap: nowrap;
-}
-.clients-list li{
-    margin: 0;
-}
-.clients-list li:not(:first-child){
-    margin-left: 24;
-}
+    .clients{
+        
+        width: 1440px;
+        /* margin-left: 156px; */
+    
+    }
+    .clients-list{
+        display: flex; 
+        flex-wrap: nowrap;
+        margin-left: 0;
+    }
+    .clients-list li{
+        margin: 0;
+    }
+    .clients-list li:not(:first-child){
+        margin-left: 24px;
+    }
+
 .client-pic{
     /* padding: 16px 32px; */
     padding: auto;
@@ -427,8 +466,8 @@ color: #2E2F42;
     width: 1440px;
 }
 .container-footer{
-    padding-left: auto;
-    padding-left: auto;
+    padding-left: 156px;
+    padding-right: 0px;
     display:flex;
     align-items: baseline;
     margin-left: 156px;
@@ -513,7 +552,7 @@ margin-bottom: 0;
 
 
 .footer-subscribe{
-    margin-left: 80px;
+    margin-left: 132px;
 }
 
 .footer-mail{
@@ -562,7 +601,7 @@ margin-bottom: 0;
     background: #4D5AE5;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
-position: relative;
+    position: relative;
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
